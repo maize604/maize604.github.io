@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MaizeLab of Ya&#39;ou Group</title>
+  
+  <subtitle>MaizeLab&#39;s BLOG And DataBase</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://maize604.github.io/"/>
+  <updated>2019-08-14T04:39:37.697Z</updated>
+  <id>http://maize604.github.io/</id>
+  
+  <author>
+    <name>MaizeLab</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网站搭建指南</title>
+    <link href="http://maize604.github.io/2019/08/14/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/"/>
+    <id>http://maize604.github.io/2019/08/14/网站搭建指南/</id>
+    <published>2019-08-14T04:38:22.000Z</published>
+    <updated>2019-08-14T04:39:37.697Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;课题组网站搭建&quot;&gt;&lt;a href=&quot;#课题组网站搭建&quot; class=&quot;headerlink&quot; title=&quot;课题组网站搭建&quot;&gt;&lt;/a&gt;课题组网站搭建&lt;/h1&gt;&lt;h2 id=&quot;1-搭建网站的目的&quot;&gt;&lt;a href=&quot;#1-搭建网站的目的&quot; class=&quot;headerlink&quot; title=&quot;1. 搭建网站的目的&quot;&gt;&lt;/a&gt;1. 搭建网站的目的&lt;/h2&gt;&lt;p&gt;搭建课题组服务器出于以下几个目的：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;作为课题组的内容展示平台，收集、记录、展示成员风采&lt;/li&gt;
+&lt;li&gt;传播、传承实验室操作技能（文字 + 图片 + 视频）&lt;/li&gt;
+&lt;li&gt;作为文件服务器对课题组实验数据进行存储&lt;/li&gt;
+&lt;li&gt;作为实验室药品管理中心数据库&lt;/li&gt;
+&lt;li&gt;作为实验室测序引物中心数据库&lt;/li&gt;
+&lt;li&gt;作为实验室田间材料分类管理数据库（材料生育情况、各播种地点气象学信息）&lt;/li&gt;
+&lt;li&gt;读书报告学习交流中心&lt;/li&gt;
+&lt;li&gt;匿名墙&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://maize604.github.io/categories/Linux/"/>
+    
+    
+      <category term="BLOG" scheme="http://maize604.github.io/tags/BLOG/"/>
+    
+      <category term="Hexo" scheme="http://maize604.github.io/tags/Hexo/"/>
+    
+      <category term="LNMP" scheme="http://maize604.github.io/tags/LNMP/"/>
+    
+      <category term="Site" scheme="http://maize604.github.io/tags/Site/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用LNMP搭建WordPress个人网站</title>
+    <link href="http://maize604.github.io/2019/08/12/%E4%BD%BF%E7%94%A8LNMP%E6%90%AD%E5%BB%BAWordPress%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/"/>
+    <id>http://maize604.github.io/2019/08/12/使用LNMP搭建WordPress个人网站/</id>
+    <published>2019-08-12T10:43:00.000Z</published>
+    <updated>2019-08-14T05:24:23.281Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;&lt;span id=&quot;使用lnmp搭建wordpress个人网站&quot;&gt;使用LNMP搭建WordPress个人网站&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://wordpress.org/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Web" scheme="http://maize604.github.io/categories/Web/"/>
+    
+    
+      <category term="Linux" scheme="http://maize604.github.io/tags/Linux/"/>
+    
+      <category term="BT" scheme="http://maize604.github.io/tags/BT/"/>
+    
+      <category term="WordPress" scheme="http://maize604.github.io/tags/WordPress/"/>
+    
+      <category term="BLOG" scheme="http://maize604.github.io/tags/BLOG/"/>
+    
+      <category term="WEB" scheme="http://maize604.github.io/tags/WEB/"/>
+    
+  </entry>
+  
+</feed>
