@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maize604.github.io/"/>
-  <updated>2019-08-14T11:13:21.649Z</updated>
+  <updated>2019-08-14T11:49:47.469Z</updated>
   <id>http://maize604.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://maize604.github.io/2019/08/14/Circos%E4%BD%9C%E5%9B%BE%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
     <id>http://maize604.github.io/2019/08/14/Circos作图系列学习笔记一/</id>
     <published>2019-08-14T08:38:12.000Z</published>
-    <updated>2019-08-14T11:13:21.649Z</updated>
+    <updated>2019-08-14T11:49:47.469Z</updated>
     
     <summary type="html">
     
@@ -45,7 +45,7 @@
     <link href="http://maize604.github.io/2019/08/14/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/"/>
     <id>http://maize604.github.io/2019/08/14/网站搭建指南/</id>
     <published>2019-08-14T04:38:22.000Z</published>
-    <updated>2019-08-14T04:39:37.697Z</updated>
+    <updated>2019-08-14T11:47:30.648Z</updated>
     
     <summary type="html">
     
@@ -82,7 +82,7 @@
     <link href="http://maize604.github.io/2019/08/12/%E4%BD%BF%E7%94%A8LNMP%E6%90%AD%E5%BB%BAWordPress%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/"/>
     <id>http://maize604.github.io/2019/08/12/使用LNMP搭建WordPress个人网站/</id>
     <published>2019-08-12T10:43:00.000Z</published>
-    <updated>2019-08-14T06:57:23.881Z</updated>
+    <updated>2019-08-14T11:46:27.477Z</updated>
     
     <summary type="html">
     
@@ -99,13 +99,13 @@
       <category term="Web" scheme="http://maize604.github.io/categories/Web/"/>
     
     
+      <category term="BLOG" scheme="http://maize604.github.io/tags/BLOG/"/>
+    
       <category term="Linux" scheme="http://maize604.github.io/tags/Linux/"/>
     
       <category term="BT" scheme="http://maize604.github.io/tags/BT/"/>
     
       <category term="WordPress" scheme="http://maize604.github.io/tags/WordPress/"/>
-    
-      <category term="BLOG" scheme="http://maize604.github.io/tags/BLOG/"/>
     
   </entry>
   

@@ -616,8 +616,7 @@ index.html</code></pre>
         "type": "php-zip",
         "packageName": null,
         "alwaysVisible": true
-    }
-</code></pre>
+    }</code></pre>
 </li>
 <li><p>开启文件信息显示</p>
 <pre class=" language-txt"><code class="language-txt">"info": {
@@ -626,16 +625,14 @@ index.html</code></pre>
         "qrcode": true,
         "qrFill": "#999",
         "qrBack": "#fff"
-    }
-</code></pre>
+    }</code></pre>
 </li>
 <li><p>默认简体中文</p>
 <pre class=" language-txt"><code class="language-txt">"l10n": {
         "enabled": true,
         "lang": "zh-cn",
         "useBrowserLang": true
-    }
-</code></pre>
+    }</code></pre>
 </li>
 <li><p>开启文件搜索</p>
 <pre class=" language-txt"><code class="language-txt">"search": {
@@ -643,16 +640,14 @@ index.html</code></pre>
         "advanced": true,
         "debounceTime": 300,
         "ignorecase": true
-    }
-</code></pre>
+    }</code></pre>
 </li>
 <li><p>开启多文件选择</p>
 <pre class=" language-txt"><code class="language-txt">"select": {
         "enabled": true,
         "clickndrag": true,
         "checkboxes": true
-    }
-</code></pre>
+    }</code></pre>
 </li>
 </ol>
 <h2><span id="4-搭建-hexo-博客网站">4. 搭建 Hexo 博客网站</span></h2><h4><span id="41-安装最新长期支持版-nodejs">4.1 安装最新长期支持版 Node.js</span></h4><p><a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a> 是一个通用编程的JavaScript平台，允许用户快速构建网络应用程序。 通过在前端和后端利用JavaScript，Node.js使开发更加一致和集成。 </p>
@@ -665,8 +660,7 @@ sudo apt-get install -y nodejs
 
 # Using Debian, as root
 curl -sL https://deb.nodesource.com/setup_12.x | bash -
-apt-get install -y nodejs
-</code></pre>
+apt-get install -y nodejs</code></pre>
 <p>方便快捷：</p>
 <p><img src="/images/nodejs-2.png" alt="Node.js"></p>
 <p><strong>通过npm安装node.js</strong></p>
@@ -678,15 +672,12 @@ $ nvm ls-remote                 ## 查看 node 所有版本
 $ nvm install v10.16.1             ## 安装需要的版本
 $ nvm list                         ## 查看当前机器安装的版本
 $ nvm use v10.16.1                 ## 切换 node 版本
-$ nvm alias default v10.16.1      ## 设置默认版本
-</code></pre>
+$ nvm alias default v10.16.1      ## 设置默认版本</code></pre>
 <p>npm 为 nodejs 的独立包，使用以下命令升级 npm：</p>
-<pre class=" language-sh"><code class="language-sh">$ sudo npm install npm@latest -g
-</code></pre>
+<pre class=" language-sh"><code class="language-sh">$ sudo npm install npm@latest -g</code></pre>
 <h3><span id="42-安装-hexo-博客框架">4.2 安装 Hexo 博客框架</span></h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。其主要通过在本地配置好相应界面后，通过 git 直接传输至服务器然后进行静态展示。</p>
 <p>Hexo 的安装依赖于 <code>git</code> 以及 <code>node.js</code> (version &gt; 6.9), 安装较为简单：</p>
-<pre class=" language-sh"><code class="language-sh">$ sudo npm install -g hexo-cli 
-</code></pre>
+<pre class=" language-sh"><code class="language-sh">$ sudo npm install -g hexo-cli</code></pre>
 <p>具体配置详细见文章《Hexo搭建配置指南》。</p>
 <h3><span id="42-hexo-的配置">4.2 Hexo 的配置</span></h3><h4><span id="421-配置网站信息">4.2.1 配置网站信息</span></h4><p>首先使用 <code>hexo init [folder]</code> 新建一个网站，编辑 <code>_config.yaml</code> 文件，添加相关网站信息等。</p>
 <h4><span id="422-配置-hexo-主题">4.2.2 配置 Hexo 主题</span></h4><p>下载适用的主题，并在 <code>_config.yaml</code> 配件中进行修改。</p>
@@ -694,8 +685,7 @@ $ nvm alias default v10.16.1      ## 设置默认版本
 <pre class=" language-sh&#39;"><code class="language-sh&#39;">$ hexo publish [layout] <filename>    # 发表草稿
 $ hexo clean        # 清除缓存文件 (db.json) 和已生成的静态文件 (public)
 $ hexo generate        # 生成页面
-$ hexo server         # 启动服务
-</filename></code></pre>
+$ hexo server         # 启动服务</filename></code></pre>
 <h2><span id="5-参考链接">5. 参考链接</span></h2><ol>
 <li><a href="https://linuxize.com/post/install-mariadb-on-centos-7/" target="_blank" rel="noopener">https://linuxize.com/post/install-mariadb-on-centos-7/</a></li>
 <li>宝塔命令大全 <a href="https://www.bt.cn/btcode.html" target="_blank" rel="noopener">https://www.bt.cn/btcode.html</a></li>
@@ -962,6 +952,10 @@ MySQL
                 
                 <div class="card-action article-tags">
                     
+                    <a href="/tags/BLOG/" target="_blank">
+                        <span class="chip bg-color">BLOG</span>
+                    </a>
+                    
                     <a href="/tags/Linux/" target="_blank">
                         <span class="chip bg-color">Linux</span>
                     </a>
@@ -972,10 +966,6 @@ MySQL
                     
                     <a href="/tags/WordPress/" target="_blank">
                         <span class="chip bg-color">WordPress</span>
-                    </a>
-                    
-                    <a href="/tags/BLOG/" target="_blank">
-                        <span class="chip bg-color">BLOG</span>
                     </a>
                     
                 </div>
