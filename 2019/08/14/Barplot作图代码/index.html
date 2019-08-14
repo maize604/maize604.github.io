@@ -16,7 +16,7 @@ Data ">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Barplot作图代码 | MaizeLab of Ya&#39;ou Group</title>
+    <title>Barplot作图代码 | 604实验室</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -44,7 +44,7 @@ Data ">
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">MaizeLab of Ya'ou Group</span>
+                    <span class="logo-span">604实验室</span>
                 </a>
             </div>
             
@@ -119,7 +119,7 @@ Data ">
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">MaizeLab of Ya'ou Group</div>
+        <div class="logo-name">604实验室</div>
         <div class="logo-desc">
             
             Ya&#39;ou Group 的博客及数据库
@@ -424,7 +424,18 @@ Data ">
                 <p><img src="barplot.png" alt="image.png"></p>
 <p>ggplot2 barplot 分面图代码如下：</p>
 <pre class=" language-R"><code class="language-R">library(ggplot2)
-Data <- read.table("data.txt",header="TRUE)" data <- as.data.frame(data) attach(data) data$time factor(time,order="TRUE,levels=c("Early","Mid","Late"))" ## temperature p<-ggplot(data="Data," aes(x="Month," y="Temperature,fill" = time)) + geom_bar(stat="identity" , position="position_dodge(width" 0.6),width="0.5)" geom_text(aes(label="Temperature)," vjust="-0.3)" facet_grid(year ~ .) scale_y_continuous(limits="c(0,max(Temperature)))" p ggtitle(label="Temperature changes" ) theme_light()< code></-></code></pre>
+Data <- read.table("data.txt",header = TRUE)
+Data <- as.data.frame(Data)
+attach(Data)
+Data$Time <- factor(Time,order=TRUE,levels=c("Early","Mid","Late")) 
+
+## Temperature
+ p<-ggplot(data=Data, aes(x=Month, y=Temperature,fill = Time)) + 
+  geom_bar(stat="identity", position = position_dodge(width = 0.6),width = 0.5) +
+  geom_text(aes(label=Temperature), position = position_dodge(width=0.6), vjust=-0.3) + 
+  facet_grid(Year ~ .) + scale_y_continuous(limits = c(0,max(Temperature)))
+
+p <- p + ggtitle(label = "Temperature changes") + theme_light()</code></pre>
 <p>数据源(data.txt)：</p>
 <pre class=" language-txt"><code class="language-txt">Year    Month    Time    Temperature    Rainfall    Light
 2017    6    Early    23.6     19.9     66.1 

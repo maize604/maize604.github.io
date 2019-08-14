@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>MaizeLab of Ya&#39;ou Group</title>
+  <title>604实验室</title>
   
   <subtitle>BLOG AND DATABASE</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://maize604.github.io/</id>
   
   <author>
-    <name>MaizeLab</name>
+    <name>小刘哥</name>
     
   </author>
   
