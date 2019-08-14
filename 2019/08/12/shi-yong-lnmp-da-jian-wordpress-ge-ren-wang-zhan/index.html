@@ -4,11 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Circos作图系列学习笔记一, MazieLab&#39;s BLOG and DataBase">
-    <meta name="description" content="【Circos作图系列学习笔记】1. Circos 软件安装CIRCOS是一个将数据和信息可视化的工具包，它可以在一个圆形的布局中可视化数据，这就能够使CIRCOS很理想的研究物体或者位置之间的关系。
+    <meta name="keywords" content="使用LNMP搭建WordPress个人网站, MazieLab&#39;s BLOG and DataBase">
+    <meta name="description" content="使用LNMP搭建WordPress个人网站WordPress 是一个以 PHP 和 MySQL 为平台的 自由开源 的博客软件和 内容管理系统。其软件安装基本需求如下：
 
-
-Cricos 官网：http://">
+PHP version 7.3 or greater.
+MySQL ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@ Cricos 官网：http://">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Circos作图系列学习笔记一 | 604实验室</title>
+    <title>使用LNMP搭建WordPress个人网站 | 604实验室</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -263,13 +263,13 @@ Cricos 官网：http://">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Circos作图系列学习笔记一
+                        使用LNMP搭建WordPress个人网站
                     </div>
                 </div>
             </div>
@@ -380,12 +380,20 @@ Cricos 官网：http://">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/circos/" target="_blank">
-                                <span class="chip bg-color">circos</span>
+                            <a href="/tags/Linux/" target="_blank">
+                                <span class="chip bg-color">Linux</span>
                             </a>
                         
-                            <a href="/tags/perl/" target="_blank">
-                                <span class="chip bg-color">perl</span>
+                            <a href="/tags/BT/" target="_blank">
+                                <span class="chip bg-color">BT</span>
+                            </a>
+                        
+                            <a href="/tags/WordPress/" target="_blank">
+                                <span class="chip bg-color">WordPress</span>
+                            </a>
+                        
+                            <a href="/tags/BLOG/" target="_blank">
+                                <span class="chip bg-color">BLOG</span>
                             </a>
                         
                     </div>
@@ -396,12 +404,8 @@ Cricos 官网：http://">
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/perl/" class="post-category" target="_blank">
-                                perl
-                            </a>
-                        
-                            <a href="/categories/perl/bioinformatics/" class="post-category" target="_blank">
-                                bioinformatics
+                            <a href="/categories/Web/" class="post-category" target="_blank">
+                                Web
                             </a>
                         
                     </div>
@@ -412,21 +416,21 @@ Cricos 官网：http://">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-14
+                    2019-08-12
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        345
+                        670
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        3 分
                     </div>
                     
                 
@@ -442,23 +446,51 @@ Cricos 官网：http://">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1><span id="circos作图系列学习笔记1-circos-软件安装">【Circos作图系列学习笔记】1. Circos 软件安装</span></h1><p>CIRCOS是一个将数据和信息可视化的工具包，它可以在一个圆形的布局中可视化数据，这就能够使CIRCOS很理想的研究物体或者位置之间的关系。</p>
-<a id="more"></a>
-
-<p>Cricos 官网：<a href="http://circos.ca/" target="_blank" rel="noopener">http://circos.ca/</a><br><img src="circos-1.png" alt="Circos Plot"></p>
-<h2><span id="1-常规-circos-安装">1. 常规 Circos 安装</span></h2><p>下载网站：<a href="http://circos.ca/software/download/" target="_blank" rel="noopener">http://circos.ca/software/download/</a></p>
-<p><img src="circos-2.png" alt="下载链接"></p>
-<p>选取与自己系统相匹配的安装包进行下载。</p>
-<pre class=" language-sh"><code class="language-sh"># install circos
-> tar xvfz circos-0.69-6.tgz
-> cd circos-0.69-6</code></pre>
-<h2><span id="2-conda-安装">2. conda 安装</span></h2><p>conda 安装算是最简便快捷的方法了，一条命令搞定： <code>conda install -c bioconda circos</code> 或者<code>conda install -c bioconda/label/cf201901 circos</code> 均可。</p>
-<h2><span id="3-安装中问题解决">3. 安装中问题解决</span></h2><p><img src="circos-3.png" alt="GD Missing"></p>
-<p>解压文件或者经过 conda 安装完成后，使用 <code>circos -modules</code> 测试是否可用，当出现模块缺失时，按照 perl 软件模块安装方法安装缺失模块。<br>需要注意的是，出现 GD 模块缺失信息的话，尤其在安装 GD 模块后仍无法解决的原因很大情况下是库文件版本名称改变了，做一个链接即可，命令：</p>
-<pre class=" language-sh"><code class="language-sh">## 首先切换至 libwebp.so.6 文件所在 lib 文件夹
-ln -s libwebp.so.6 libwebp.so.7</code></pre>
-<p>问题解决：<br><img src="circos-4.png" alt="问题解决"></p>
-<p>小刘哥 2019-05-16<br>【Circos作图系列学习笔记】1. Circos 软件安装<br>【Circos作图系列学习笔记】2. Circos 数据准备</p>
+                <h1><span id="使用lnmp搭建wordpress个人网站">使用LNMP搭建WordPress个人网站</span></h1><p><a href="https://wordpress.org/" target="_blank" rel="noopener"><strong>WordPress</strong></a> 是一个以 <a href="https://zh.wikipedia.org/wiki/PHP" target="_blank" rel="noopener">PHP</a> 和 <a href="https://zh.wikipedia.org/wiki/MySQL" target="_blank" rel="noopener">MySQL</a> 为平台的 <a href="https://zh.wikipedia.org/wiki/自由及开放源代码软件" target="_blank" rel="noopener">自由开源</a> 的博客软件和 <a href="https://zh.wikipedia.org/wiki/内容管理系统" target="_blank" rel="noopener">内容管理系统</a>。其软件安装基本需求如下：</p>
+<ul>
+<li><a href="https://secure.php.net/" target="_blank" rel="noopener">PHP</a> version 7.3 or greater.</li>
+<li><a href="https://www.mysql.com/" target="_blank" rel="noopener">MySQL</a> version 5.6 or greater <em>OR</em> <a href="https://mariadb.org/" target="_blank" rel="noopener">MariaDB</a> version 10.1 or greater.    </li>
+<li><a href="https://wordpress.org/news/2016/12/moving-toward-ssl/" target="_blank" rel="noopener">HTTPS</a> support.</li>
+</ul>
+<h2><span id="1-lnmp一键安装">1. LNMP一键安装</span></h2><h3><span id="11-更换国内软件源提升下载速度">1.1 更换国内软件源，提升下载速度</span></h3><p>Ubuntu 18.04 系统安装完成后，更换源，提高软件下载安装速度。</p>
+<pre class=" language-sh"><code class="language-sh">## 备份源文件
+$ sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak 
+## 替换为阿里源
+$ sudo vim /etc/apt/sources.list</code></pre>
+<p>将阿里源写入 <code>sources.list</code> 文件：</p>
+<pre class=" language-txt"><code class="language-txt">#阿里云源
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse</code></pre>
+<p>更新源后，使用 <code>apt update &amp;&amp; apt upgrade</code> 升级系统。</p>
+<h3><span id="12-安装-lnmp">1.2 安装 LNMP</span></h3><p>纯净安装的系统下使用命令一键安装 LNMP：</p>
+<pre class=" language-sh"><code class="language-sh"># wget http://soft.vpser.net/lnmp/lnmp1.6.tar.gz -cO lnmp1.6.tar.gz && tar zxf lnmp1.6.tar.gz && cd lnmp1.6 && ./install.sh lnmp</code></pre>
+<p>选择合适的软件版本进行安装，安装时间从几十分钟到几十个小时不等，主要看网速。</p>
+<p><img src="lnmp-1.png" alt></p>
+<p>安装完成后如下图所示：</p>
+<p><img src="lnmp-2.png" alt></p>
+<p>在浏览器中键入 IP 地址，提示 LNMP 安装成功：</p>
+<p><img src="lnmp-3.png" alt></p>
+<h3><span id="13-新建虚拟主机">1.3 新建虚拟主机</span></h3><p>LNMP 安装完成后，使用命令 <code>lnmp vhost add</code> 添加站点。</p>
+<h2><span id="2-wordpress-安装">2. WordPress 安装</span></h2><h3><span id="21-下载wordpress">2.1 下载WordPress</span></h3><p>在 <a href="https://wordpress.org/" target="_blank" rel="noopener">WordPress 官网 </a>下载 <a href="https://wordpress.org/latest.zip" target="_blank" rel="noopener">最新安装包</a>。</p>
+<h3><span id="22-安装-wordpress">2.2 安装 WordPress</span></h3><p>将下载的安装包解压到虚拟主机根目录下 <code>/home/wwwroot/maize.lab</code></p>
+<h3><span id="23-配置-wordpress">2.3 配置 WordPress</span></h3><h2><span id="3-安装-wordpress-主题">3. 安装 WordPress 主题</span></h2><h2><span id="4-安装-wordpress-插件">4. 安装 WordPress 插件</span></h2><h2><span id="5-使用-wordpress-发表文章">5. 使用 WordPress 发表文章</span></h2><h2><span id="6-wordpress-整合-ftp-服务">6. WordPress 整合 FTP 服务</span></h2><h2><span id="7-使用域名访问网站">7. 使用域名访问网站</span></h2><p>由于我们使用的本地局域网服务器搭建的网站，限制于内网访问，没有域名解析，所以可以在本地简单配置实现域名访问网站。</p>
+<p>修改 <code>C:\Windows\System32\drivers\etc\hosts</code> 文件，在文件末尾添加：<code>192.168.1.5    maize.lab</code> </p>
+<p>即可通过域名 <code>maize.lab</code> 访问网站主页。</p>
+<h2><span id="参考链接">参考链接</span></h2><ol>
+<li>Ubuntu 更换国内软件源：<a href="https://yq.aliyun.com/articles/639051" target="_blank" rel="noopener">https://yq.aliyun.com/articles/639051</a></li>
+<li>安装 lnmp：<a href="https://lnmp.org/install.html" target="_blank" rel="noopener">https://lnmp.org/install.html</a></li>
+<li>添加/删除虚拟主机：<a href="https://lnmp.org/faq/lnmp-vhost-add-howto.html" target="_blank" rel="noopener">https://lnmp.org/faq/lnmp-vhost-add-howto.html</a></li>
+<li>LNMP替换安装下载源镜像地址的方法：<a href="https://lnmp.org/faq/lnmp-download-source.html" target="_blank" rel="noopener">https://lnmp.org/faq/lnmp-download-source.html</a></li>
+<li></li>
+</ol>
 
             </div>
             <hr/>
@@ -624,64 +656,7 @@ ln -s libwebp.so.6 libwebp.so.7</code></pre>
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/08/14/使用ggbiplot绘制主成分图/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="使用ggbiplot绘制主成分图">
-                        
-                        <span class="card-title">使用ggbiplot绘制主成分图</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            PCA 图在常规的分析中也比较常见，本文展示了使用 ggbiplot 包绘制 PCA 图的一般方法。
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-14
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/R/" class="post-category" target="_blank">
-                                    R
-                                </a>
-                            
-                            <a href="/categories/R/bioinformatics/" class="post-category" target="_blank">
-                                    bioinformatics
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/plot/" target="_blank">
-                        <span class="chip bg-color">plot</span>
-                    </a>
-                    
-                    <a href="/tags/R/" target="_blank">
-                        <span class="chip bg-color">R</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/08/14/网站搭建指南/">
+                <a href="/2019/08/14/wang-zhan-da-jian-zhi-nan/">
                     <div class="card-image">
                         
                         
@@ -702,9 +677,9 @@ ln -s libwebp.so.6 libwebp.so.7</code></pre>
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-14
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-14
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -734,6 +709,71 @@ ln -s libwebp.so.6 libwebp.so.7</code></pre>
                     
                     <a href="/tags/Site/" target="_blank">
                         <span class="chip bg-color">Site</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/08/12/shi-yong-lnmp-da-jian-wordpress-ge-ren-wang-zhan/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="使用LNMP搭建WordPress个人网站">
+                        
+                        <span class="card-title">使用LNMP搭建WordPress个人网站</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            使用LNMP搭建WordPress个人网站WordPress 是一个以 PHP 和 MySQL 为平台的 自由开源 的博客软件和 内容管理系统。其软件安装基本需求如下：
+
+PHP version 7.3 or greater.
+MySQL 
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Web/" class="post-category" target="_blank">
+                                    Web
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/" target="_blank">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/BT/" target="_blank">
+                        <span class="chip bg-color">BT</span>
+                    </a>
+                    
+                    <a href="/tags/WordPress/" target="_blank">
+                        <span class="chip bg-color">WordPress</span>
+                    </a>
+                    
+                    <a href="/tags/BLOG/" target="_blank">
+                        <span class="chip bg-color">BLOG</span>
                     </a>
                     
                 </div>
@@ -848,9 +888,9 @@ ln -s libwebp.so.6 libwebp.so.7</code></pre>
 <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            本站由&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>基于
+            本站由 &copy;<a href="https://blinkfox.github.io/" target="_blank">Alipe</a>基于
             <a href="https://hexo.io/" target="_blank">Hexo</a> 的
-            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
+            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">matery</a> 主题搭建.
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
