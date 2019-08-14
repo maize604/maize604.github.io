@@ -421,7 +421,7 @@ w">
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        24
+                        27
                     </div>
                     
 
@@ -449,11 +449,7 @@ w">
 install_github("vqv/ggbiplot")</code></pre>
 <h3><span id="使用">使用</span></h3><pre class=" language-R"><code class="language-R">library(ggbiplot)
 data(wine)
-wine.pca <- prcomp(wine, scale. = TRUE)
-ggbiplot(wine.pca, obs.scale = 1, var.scale = 1,
-  groups = wine.class, ellipse = TRUE, circle = TRUE) +
-  scale_color_discrete(name = '') +
-  theme(legend.direction = 'horizontal', legend.position = 'top')</code></pre>
+wine.pca <- prcomp(wine, scale.="TRUE)" ggbiplot(wine.pca, obs.scale="1," var.scale="1," groups="wine.class," ellipse="TRUE," circle="TRUE)" + scale_color_discrete(name ) theme(legend.direction="horizontal" , legend.position="top" )< code></-></code></pre>
 <h3><span id="示例图">示例图</span></h3><p><img src="PCA.png" alt="PCA.png"></p>
 
             </div>
