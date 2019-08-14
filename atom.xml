@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maize604.github.io/"/>
-  <updated>2019-08-14T11:57:01.913Z</updated>
+  <updated>2019-08-14T13:13:31.441Z</updated>
   <id>http://maize604.github.io/</id>
   
   <author>
@@ -15,6 +15,84 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通过RNA测序解析玉米籽粒复杂的调控网络</title>
+    <link href="http://maize604.github.io/2019/08/14/%E9%80%9A%E8%BF%87RNA%E6%B5%8B%E5%BA%8F%E8%A7%A3%E6%9E%90%E7%8E%89%E7%B1%B3%E7%B1%BD%E7%B2%92%E5%A4%8D%E6%9D%82%E7%9A%84%E8%B0%83%E6%8E%A7%E7%BD%91%E7%BB%9C/"/>
+    <id>http://maize604.github.io/2019/08/14/通过RNA测序解析玉米籽粒复杂的调控网络/</id>
+    <published>2019-08-14T13:05:16.000Z</published>
+    <updated>2019-08-14T13:13:31.441Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-文章概述&quot;&gt;&lt;a href=&quot;#1-文章概述&quot; class=&quot;headerlink&quot; title=&quot;1. 文章概述&quot;&gt;&lt;/a&gt;1. 文章概述&lt;/h2&gt;&lt;p&gt;本篇要解读的文献是一篇发表较早，却比较经典的文章。是2013发表于 Nature Communication 上的一篇 eQTL的文章。&lt;br&gt;&lt;img src=&quot;fig-1.png&quot; alt=&quot;文章截图&quot;&gt;&lt;/p&gt;
+&lt;p&gt;玉米基因组非常复杂，其重复性序列高达85%。作者通过对368份玉米多样性材料授粉后15天的籽粒进行RNA测序分析，获得了28769个基因的表达量，这些基因数约占玉米注释基因的60%，同时还获得了360万来自基因内的SNP标记。该项研究把基因表达量作为表型，通过全基因组关联分析，鉴定了 16408 个 eQTL。然后，通过发展的两步分析方法，把 95.1% 的 eQTL 限定到 10Kb 的区域，其中 67.7% 的 eQTL 只包含一个候选基因。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="文献阅读" scheme="http://maize604.github.io/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/"/>
+    
+    
+      <category term="文献阅读" scheme="http://maize604.github.io/tags/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/"/>
+    
+      <category term="eQTL" scheme="http://maize604.github.io/tags/eQTL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Barplot作图代码</title>
+    <link href="http://maize604.github.io/2019/08/14/Barplot%E4%BD%9C%E5%9B%BE%E4%BB%A3%E7%A0%81/"/>
+    <id>http://maize604.github.io/2019/08/14/Barplot作图代码/</id>
+    <published>2019-08-14T12:58:16.000Z</published>
+    <updated>2019-08-14T12:59:09.080Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;barplot.png&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;ggplot2 barplot 分面图代码如下：&lt;/p&gt;
+&lt;pre class=&quot; language-R&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用ggbiplot绘制主成分图</title>
+    <link href="http://maize604.github.io/2019/08/14/%E4%BD%BF%E7%94%A8ggbiplot%E7%BB%98%E5%88%B6%E4%B8%BB%E6%88%90%E5%88%86%E5%9B%BE/"/>
+    <id>http://maize604.github.io/2019/08/14/使用ggbiplot绘制主成分图/</id>
+    <published>2019-08-14T12:52:23.000Z</published>
+    <updated>2019-08-14T12:55:46.837Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;软件链接：&lt;a href=&quot;https://github.com/vqv/ggbiplot&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/vqv/ggbiplot&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="R" scheme="http://maize604.github.io/categories/R/"/>
+    
+      <category term="bioinformatics" scheme="http://maize604.github.io/categories/R/bioinformatics/"/>
+    
+    
+      <category term="plot" scheme="http://maize604.github.io/tags/plot/"/>
+    
+      <category term="R" scheme="http://maize604.github.io/tags/R/"/>
+    
+  </entry>
   
   <entry>
     <title>Circos作图系列学习笔记一</title>
