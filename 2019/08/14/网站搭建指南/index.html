@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          网站搭建笔记 - DataBase, BLOG
+          网站搭建指南 - MazieLab&#39;s BLOG and DataBase
         
     </title>
 
-    <link rel="canonical" href="http://maize.lab/2019/08/14/网站搭建指南/">
+    <link rel="canonical" href="http://maize604.github.io/2019/08/14/网站搭建指南/">
 
     <!-- Bootstrap Core CSS -->
 
@@ -113,7 +113,7 @@
                               <a class="tag" href="/tags/#Site" title="Site">Site</a>
                             
                         </div>
-                        <h1>网站搭建笔记</h1>
+                        <h1>网站搭建指南</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by alipe on
@@ -239,6 +239,7 @@
 <li>……</li>
 </ol>
 <a id="more"></a>
+
 <h2 id="2-搭建服务器基本框架"><a href="#2-搭建服务器基本框架" class="headerlink" title="2. 搭建服务器基本框架"></a>2. 搭建服务器基本框架</h2><p>本着尽量使用开源软件、安全稳定的原则，我们使用 LNMP 架构进行服务器网站搭建基本框架。BLOG 系统采用开源静态页面 Hexo 软件进行生成。文件系统服务由 nginx 提供并且由 h5ai 软件提供目录列表服务。 </p>
 <ul>
 <li><a href="https://ubuntu.com/download/server/thank-you?version=18.04.2&architecture=amd64" target="_blank" rel="noopener">Ubuntu Server version 18.04.2 LTS</a> .</li>
@@ -253,7 +254,7 @@
 <li>……</li>
 </ul>
 <p>LNMP是指一组通常一起使用来运行动态网站或者服务器的自由软件名称首字母缩写。L 指 Linux，N 指 Nginx，M一般指 MySQL，也可以指 MariaDB，P 一般指 PHP，也可以指 Perl 或 Python。</p>
-<h3 id="2-1-安装-Ubuntu-Server-18-04-LTS"><a href="#2-1-安装-Ubuntu-Server-18-04-LTS" class="headerlink" title="2.1 安装 Ubuntu Server 18.04 LTS"></a>2.1 安装 Ubuntu Server 18.04 LTS</h3><p><img src="ubuntu-4.png" alt="Ubuntu 18.04 Server 18.04.2 LTS"></p>
+<h3 id="2-1-安装-Ubuntu-Server-18-04-LTS"><a href="#2-1-安装-Ubuntu-Server-18-04-LTS" class="headerlink" title="2.1 安装 Ubuntu Server 18.04 LTS"></a>2.1 安装 Ubuntu Server 18.04 LTS</h3><p><img src="/images/ubuntu-4.png" alt="Ubuntu 18.04 Server 18.04.2 LTS"></p>
 <p>下载链接：<a href="https://ubuntu.com/download/server/thank-you?version=18.04.2&architecture=amd64" target="_blank" rel="noopener">Ubuntu Server 18.04.2 LTS</a></p>
 <p><strong>我们使用 Windows  10 软件商店自带 Ubuntu 18.04 进行试验测试，安装方法如下</strong>：</p>
 <ol>
@@ -265,7 +266,7 @@
 <li>添加 Ubuntu 用户及密码</li>
 <li>大功告成</li>
 </ol>
-<p><img src="Ubuntu-7.png" alt></p>
+<p><img src="/images/Ubuntu-7.png" alt></p>
 <p> 安装完成后，将软件源替换为清华源, 备份并编辑 <code>sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak &amp;&amp; sudo vim /etc/apt/sources.list</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line"></span><br><span class="line"># 预发布软件源，不建议启用</span><br><span class="line"># deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</span><br></pre></td></tr></table></figure>
 
@@ -288,30 +289,30 @@
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl http://download.bt.cn/install/update6.sh|bash</span><br></pre></td></tr></table></figure>
 
 <p>安装成功后，安装信息给出宝塔管理面板的登陆接口及账户密码：</p>
-<p><img src="bt-1.png" alt="BT Success"></p>
+<p><img src="/images/bt-1.png" alt="BT Success"></p>
 <p>在浏览器中输入宝塔控制面板管理入口：<code>192.168.5.208:8888/a3b17e21</code>, 输入账户<code>tdmpqguz</code>, 输入密码<code>df53ffd8</code> 登陆管理。</p>
 <p>安装 <code>nginx, MySQL(mariadb), PHP</code>等软件：</p>
-<p><img src="bt-2.png" alt></p>
+<p><img src="/images/bt-2.png" alt></p>
 <p>安装完成后重启服务器及控制面板，若 <code>nginx</code> 服务没有启动，则在终端或者控制面板中手动启动之。</p>
 <h3 id="2-3-使用-LNMP-一键安装"><a href="#2-3-使用-LNMP-一键安装" class="headerlink" title="2.3 使用 LNMP 一键安装"></a>2.3 使用 <a href="https://lnmp.org/" target="_blank" rel="noopener">LNMP</a> 一键安装</h3><p>LNMP一键安装包是一个用Linux Shell 编写的可以为 CentOS/RHEL/Fedora/Aliyun/Amazon、Debian/Ubuntu/Raspbian/Deepin/Mint Linux VPS 或独立主机安装 LNMP(Nginx/MySQL/PHP)、LNMPA(Nginx/MySQL/PHP/Apache)、LAMP(Apache/MySQL/PHP) 生产环境的 Shell 程序。</p>
 <p>使用一键安装命令安装 LNMP：</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># wget http://soft.vpser.net/lnmp/lnmp1.6.tar.gz -cO lnmp1.6.tar.gz &amp;&amp; tar zxf lnmp1.6.tar.gz &amp;&amp; cd lnmp1.6 &amp;&amp; ./install.sh lnmp</span></span><br></pre></td></tr></table></figure>
 
 <p>安装完成后：</p>
-<p><img src="lnmp-2.png" alt></p>
+<p><img src="/images/lnmp-2.png" alt></p>
 <p>浏览器输入 IP 地址显示安装成功：</p>
 <p><img src="lnmp-1.png" alt></p>
 <h2 id="3-使用-H5ai-搭建文件目录列表"><a href="#3-使用-H5ai-搭建文件目录列表" class="headerlink" title="3. 使用 H5ai 搭建文件目录列表"></a>3. 使用 H5ai 搭建文件目录列表</h2><p><a href="https://larsjung.de/h5ai/" target="_blank" rel="noopener">h5ai</a> 是一款 PHP 开发的目录列表程序，由德国开发者 Lars Jung 主导开发，它提供多种文件目录列表呈现方式，支持多种主流 Web 服务器，例如 Nginx、Apache、Cherokee、Lighttpd 等，支持多国语言，可以直接在线预览视频、图片、音乐等，效果很炫。</p>
 <p>示例网站：<a href="https://larsjung.de/h5ai/demo/" target="_blank" rel="noopener">https://larsjung.de/h5ai/demo/</a></p>
-<p><img src="h5ai-1.png" alt></p>
+<p><img src="/images/h5ai-1.png" alt></p>
 <h3 id="3-1-宝塔面板下安装配置-h5ai"><a href="#3-1-宝塔面板下安装配置-h5ai" class="headerlink" title="3.1 宝塔面板下安装配置 h5ai"></a>3.1 宝塔面板下安装配置 h5ai</h3><ol>
 <li>在宝塔控制面板中新建站点，如果有域名则填写域名，否则填写 IP 地址。</li>
 </ol>
-<p><img src="h5ai-0.png" alt></p>
+<p><img src="/images/h5ai-0.png" alt></p>
 <ol start="2">
 <li>从 h5ai 网站下载文件: <a href="https://release.larsjung.de/h5ai/h5ai-0.29.2.zip" target="_blank" rel="noopener">h5ai-0.29.2.zip</a>。将下载好的文件上传至新建下载网站根目录，并解压。</li>
 </ol>
-<p><img src="h5ai-5.png" alt></p>
+<p><img src="/images/h5ai-5.png" alt></p>
 <ol start="3">
 <li>删除其他无关文件。</li>
 </ol>
@@ -320,23 +321,23 @@
 <ol start="4">
 <li>在宝塔面板中，进入软件商店，找到 PHP 设置。</li>
 </ol>
-<p><img src="h5ai-8.png" alt></p>
+<p><img src="/images/h5ai-8.png" alt></p>
 <ol start="5">
 <li>修改 PHP 配置 - 禁用函数，删除禁用函数 <code>exec</code>、<code>putenv</code> 、<code>passthru</code> 、<code>scandir</code>。</li>
 </ol>
-<p><img src="h5ai-7.png" alt></p>
+<p><img src="/images/h5ai-7.png" alt></p>
 <ol start="6">
 <li>同样在软件商店中修改 Nginx 配置, 在 <code>index.html</code>行后添加 <code>/_h5ai/public/index.php</code> 。</li>
 </ol>
-<p><img src="h5ai-3.png" alt></p>
+<p><img src="/images/h5ai-3.png" alt></p>
 <ol start="7">
 <li>添加在线预览图片等插件。</li>
 </ol>
-<p><img src="h5ai-6.png" alt></p>
+<p><img src="/images/h5ai-6.png" alt></p>
 <p>配置完成后，重启机器，在浏览器中输入 <code>http://IP/_h5ai/public/index.php</code> 查看 h5ai 目录。</p>
 <h3 id="3-2-在-LNMP-框架下安装配置-h5ai"><a href="#3-2-在-LNMP-框架下安装配置-h5ai" class="headerlink" title="3.2 在 LNMP 框架下安装配置 h5ai"></a>3.2 在 LNMP 框架下安装配置 h5ai</h3><ol>
 <li><p>使用 <code>lnmp vhost add</code>  命令新建站点</p>
-<p><img src="lnmp1.4-vhost-add-1.png" alt></p>
+<p><img src="/images/lnmp1.4-vhost-add-1.png" alt></p>
 </li>
 <li><p>输入站点域名，没有的话直接使用 IP 地址</p>
 </li>
@@ -350,7 +351,7 @@
 </li>
 <li><p>修改当前站点下的 nginx  配置文件 <code>/usr/local/nginx/conf/vhost/域名.conf</code> 在 root 行下添加：</p>
 <p><code>index index.html index.php /_h5ai/public/index.php;</code></p>
-<p><img src="h5ai-nginx-config.png" alt></p>
+<p><img src="/images/h5ai-nginx-config.png" alt></p>
 </li>
 <li><p>修改 php 配置文件 <code>/usr/local/php/etc/php.ini</code> , 搜索 <code>disable_functions</code>，将其后面的<code>scandir</code>、<code>exec</code> 和 <code>passthru</code> 删除，保存</p>
 </li>
@@ -359,7 +360,7 @@
 <li><p>安装必要的插件</p>
 </li>
 <li><p>将要分享的文件放置于根目录下，在浏览器中输入 IP 地址即可</p>
-<p><img src="h5ai-10.png" alt></p>
+<p><img src="/images/h5ai-10.png" alt></p>
 </li>
 <li><p>搞定收工。</p>
 </li>
@@ -400,12 +401,12 @@
 </ol>
 <h2 id="4-搭建-Hexo-博客网站"><a href="#4-搭建-Hexo-博客网站" class="headerlink" title="4. 搭建 Hexo 博客网站"></a>4. 搭建 Hexo 博客网站</h2><h4 id="4-1-安装最新长期支持版-Node-js"><a href="#4-1-安装最新长期支持版-Node-js" class="headerlink" title="4.1 安装最新长期支持版 Node.js"></a>4.1 安装最新长期支持版 Node.js</h4><p><a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a> 是一个通用编程的JavaScript平台，允许用户快速构建网络应用程序。 通过在前端和后端利用JavaScript，Node.js使开发更加一致和集成。 </p>
 <p>从官方网站来看，最新的 LTS Nodejs 版文为 v10：</p>
-<p><img src="nodejs-1.png" alt="Node.js"></p>
+<p><img src="/images/nodejs-1.png" alt="Node.js"></p>
 <p>参考文档：<a href="https://github.com/nodesource/distributions" target="_blank" rel="noopener">https://github.com/nodesource/distributions</a> 安装 node.js v12。</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Using Ubuntu</span></span><br><span class="line">curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -</span><br><span class="line">sudo apt-get install -y nodejs</span><br><span class="line"></span><br><span class="line"><span class="comment"># Using Debian, as root</span></span><br><span class="line">curl -sL https://deb.nodesource.com/setup_12.x | bash -</span><br><span class="line">apt-get install -y nodejs</span><br></pre></td></tr></table></figure>
 
 <p>方便快捷：</p>
-<p><img src="nodejs-2.png" alt="Node.js"></p>
+<p><img src="/images/nodejs-2.png" alt="Node.js"></p>
 <p><strong>通过npm安装node.js</strong></p>
 <p>当然可以首先安装 node.js 的版本管理包 <code>npm</code> 然后再使用 npm 安装需要版本的 node.js。</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## install NVM (Node Version Manager)</span></span><br><span class="line">$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash</span><br><span class="line">$ <span class="built_in">source</span>   ~/.bashrc || <span class="built_in">source</span>   ~/.zshrc</span><br><span class="line">$ nvm ls-remote 				<span class="comment">## 查看 node 所有版本</span></span><br><span class="line">$ nvm install v10.16.1 			<span class="comment">## 安装需要的版本</span></span><br><span class="line">$ nvm list 						<span class="comment">## 查看当前机器安装的版本</span></span><br><span class="line">$ nvm use v10.16.1 				<span class="comment">## 切换 node 版本</span></span><br><span class="line">$ nvm <span class="built_in">alias</span> default v10.16.1  	<span class="comment">## 设置默认版本</span></span><br></pre></td></tr></table></figure>
@@ -437,10 +438,6 @@
                 <!-- Pager -->
                 <ul class="pager">
                     
-                    
-                        <li class="next">
-                            <a href="/2019/08/06/搭建基本网络环境/" data-toggle="tooltip" data-placement="top" title="搭建基本网络环境">Next post &rarr;</a>
-                        </li>
                     
                 </ul>
 
@@ -678,7 +675,7 @@
 <script>
     // only load tagcloud.js in tag.html
     if($('#tag_cloud').length !== 0){
-        async("http://maize.lab/2019/08/14/网站搭建指南/index.html/js/jquery.tagcloud.js",function(){
+        async("http://maize604.github.io/2019/08/14/网站搭建指南/index.html/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
                 //size: {start: 1, end: 1, unit: 'em'},
                 color: {start: '#bbbbee', end: '#0085a1'},
@@ -713,7 +710,7 @@
 	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
     <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
 <!-- Image to hack wechat -->
-<img src="http://maize.lab/img/icon_wechat.png" width="0" height="0" />
+<img src="http://maize604.github.io/img/icon_wechat.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
 </body>
