@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web Page For Maize Lab Information!">
+    <meta name="keyword" content>
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          网站搭建笔记 - DataBase, BLOG
+        
+    </title>
+
+    <link rel="canonical" href="http://maize.lab/2019/08/14/网站搭建指南/">
+
+    <!-- Bootstrap Core CSS -->
+
+   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+
+    
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+
+    <link rel="stylesheet" href="/css/donate.css">
+	<link rel="stylesheet" href="/css/w3.css">
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+    }
+   .post-heading{
+    padding:20px;
+    }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+
+</style>
+
+<header id="headerid" class="w3-indigo intro-header" style="position:relative;">
+    <!-- Signature -->
+	
+        <div class="container">
+            <div class=" row" >
+			
+			<canvas id="particles-js-canvas" style="position:absolute;z-index:1;top:0px;left:0px;" width="100%" height="50%"></canvas>
+			
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="z-index:2;">
+                
+                    <div class="post-heading" style="padding:40px">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#BLOG" title="BLOG">BLOG</a>
+                            
+                              <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
+                            
+                              <a class="tag" href="/tags/#LNMP" title="LNMP">LNMP</a>
+                            
+                              <a class="tag" href="/tags/#Site" title="Site">Site</a>
+                            
+                        </div>
+                        <h1>网站搭建笔记</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by alipe on
+                            2019-08-14
+                        </span>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+  
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">MaizeLab of Ya&#39;ou Group</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a  href="/">Homepage</a>
+                    </li>
+		    
+                    
+
+                        
+                        <li>
+           
+                            <a  href="10.255.229.25:81">DataBase</a>
+                           
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+           
+                            <a  href="/about">About</a>
+                           
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h1 id="课题组网站搭建"><a href="#课题组网站搭建" class="headerlink" title="课题组网站搭建"></a>课题组网站搭建</h1><h2 id="1-搭建网站的目的"><a href="#1-搭建网站的目的" class="headerlink" title="1. 搭建网站的目的"></a>1. 搭建网站的目的</h2><p>搭建课题组服务器出于以下几个目的：</p>
+<ol>
+<li>作为课题组的内容展示平台，收集、记录、展示成员风采</li>
+<li>传播、传承实验室操作技能（文字 + 图片 + 视频）</li>
+<li>作为文件服务器对课题组实验数据进行存储</li>
+<li>作为实验室药品管理中心数据库</li>
+<li>作为实验室测序引物中心数据库</li>
+<li>作为实验室田间材料分类管理数据库（材料生育情况、各播种地点气象学信息）</li>
+<li>读书报告学习交流中心</li>
+<li>匿名墙</li>
+<li>……</li>
+</ol>
+<a id="more"></a>
+<h2 id="2-搭建服务器基本框架"><a href="#2-搭建服务器基本框架" class="headerlink" title="2. 搭建服务器基本框架"></a>2. 搭建服务器基本框架</h2><p>本着尽量使用开源软件、安全稳定的原则，我们使用 LNMP 架构进行服务器网站搭建基本框架。BLOG 系统采用开源静态页面 Hexo 软件进行生成。文件系统服务由 nginx 提供并且由 h5ai 软件提供目录列表服务。 </p>
+<ul>
+<li><a href="https://ubuntu.com/download/server/thank-you?version=18.04.2&architecture=amd64" target="_blank" rel="noopener">Ubuntu Server version 18.04.2 LTS</a> .</li>
+<li><a href="https://nginx.org/en/download.html" target="_blank" rel="noopener">Nginx</a> version 1.16 or greater.</li>
+<li><a href="https://www.mysql.com/" target="_blank" rel="noopener">MySQL</a> version 5.6 or greater <em>OR</em> <a href="https://mariadb.org/" target="_blank" rel="noopener">MariaDB</a> version 10.1 or greater.</li>
+<li><a href="https://secure.php.net/" target="_blank" rel="noopener">PHP</a> version 7.3 or greater.</li>
+<li><a href="https://larsjung.de/h5ai/" target="_blank" rel="noopener">h5ai version 0.29.2</a> </li>
+<li><a href="https://nodejs.org" target="_blank" rel="noopener">node.js</a> version 12.0</li>
+<li><a href>Git</a> version 2.9</li>
+<li><a href>Hexo</a> version </li>
+<li>WordPress </li>
+<li>……</li>
+</ul>
+<p>LNMP是指一组通常一起使用来运行动态网站或者服务器的自由软件名称首字母缩写。L 指 Linux，N 指 Nginx，M一般指 MySQL，也可以指 MariaDB，P 一般指 PHP，也可以指 Perl 或 Python。</p>
+<h3 id="2-1-安装-Ubuntu-Server-18-04-LTS"><a href="#2-1-安装-Ubuntu-Server-18-04-LTS" class="headerlink" title="2.1 安装 Ubuntu Server 18.04 LTS"></a>2.1 安装 Ubuntu Server 18.04 LTS</h3><p><img src="ubuntu-4.png" alt="Ubuntu 18.04 Server 18.04.2 LTS"></p>
+<p>下载链接：<a href="https://ubuntu.com/download/server/thank-you?version=18.04.2&architecture=amd64" target="_blank" rel="noopener">Ubuntu Server 18.04.2 LTS</a></p>
+<p><strong>我们使用 Windows  10 软件商店自带 Ubuntu 18.04 进行试验测试，安装方法如下</strong>：</p>
+<ol>
+<li>打开 <code>控制面板 --&gt; 程序 --&gt; 程序和功能</code> 点击 <code>启动或关闭 Windows 功能</code></li>
+<li>点击启用 <code>适用于 Linux 的 Windows 子系统</code></li>
+<li>重启机器</li>
+<li>打开微软应用商店，搜索 Ubuntu</li>
+<li>点击 Ubuntu 18.04 下载安装</li>
+<li>添加 Ubuntu 用户及密码</li>
+<li>大功告成</li>
+</ol>
+<p><img src="Ubuntu-7.png" alt></p>
+<p> 安装完成后，将软件源替换为清华源, 备份并编辑 <code>sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak &amp;&amp; sudo vim /etc/apt/sources.list</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line"></span><br><span class="line"># 预发布软件源，不建议启用</span><br><span class="line"># deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</span><br></pre></td></tr></table></figure>
+
+<p>使用 <code>sudo apt update &amp;&amp; sudo apt upgrade</code> 更新本地软件。</p>
+<p>安装基本软件：<code>sudo apt install htop tree git vim curl</code> </p>
+<h3 id="2-2-使用宝塔面板一键安装-LNMP"><a href="#2-2-使用宝塔面板一键安装-LNMP" class="headerlink" title="2.2 使用宝塔面板一键安装 LNMP"></a>2.2 使用宝塔面板一键安装 LNMP</h3><p><a href="https://www.bt.cn/" target="_blank" rel="noopener">宝塔面板</a> 是一款服务器管理软件，支持 Windows 和 Linux 系统，可以通过 Web 端轻松管理服务器，提升运维效率。例如：创建管理网站、FTP、数据库，拥有可视化文件管理器，可视化软件管理器，可视化CPU、内存、流量监控图表，计划任务等功能。</p>
+<p><strong>Centos安装命令：</strong></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh</span><br></pre></td></tr></table></figure>
+
+<p><strong>Ubuntu/Deepin 安装命令：</strong></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh</span><br></pre></td></tr></table></figure>
+
+<p><strong>Debian安装命令：</strong></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure>
+
+<p><strong>Fedora安装命令:</strong></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure>
+
+<p> <strong>Linux面板6.9.7升级命令：</strong></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl http://download.bt.cn/install/update6.sh|bash</span><br></pre></td></tr></table></figure>
+
+<p>安装成功后，安装信息给出宝塔管理面板的登陆接口及账户密码：</p>
+<p><img src="bt-1.png" alt="BT Success"></p>
+<p>在浏览器中输入宝塔控制面板管理入口：<code>192.168.5.208:8888/a3b17e21</code>, 输入账户<code>tdmpqguz</code>, 输入密码<code>df53ffd8</code> 登陆管理。</p>
+<p>安装 <code>nginx, MySQL(mariadb), PHP</code>等软件：</p>
+<p><img src="bt-2.png" alt></p>
+<p>安装完成后重启服务器及控制面板，若 <code>nginx</code> 服务没有启动，则在终端或者控制面板中手动启动之。</p>
+<h3 id="2-3-使用-LNMP-一键安装"><a href="#2-3-使用-LNMP-一键安装" class="headerlink" title="2.3 使用 LNMP 一键安装"></a>2.3 使用 <a href="https://lnmp.org/" target="_blank" rel="noopener">LNMP</a> 一键安装</h3><p>LNMP一键安装包是一个用Linux Shell 编写的可以为 CentOS/RHEL/Fedora/Aliyun/Amazon、Debian/Ubuntu/Raspbian/Deepin/Mint Linux VPS 或独立主机安装 LNMP(Nginx/MySQL/PHP)、LNMPA(Nginx/MySQL/PHP/Apache)、LAMP(Apache/MySQL/PHP) 生产环境的 Shell 程序。</p>
+<p>使用一键安装命令安装 LNMP：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># wget http://soft.vpser.net/lnmp/lnmp1.6.tar.gz -cO lnmp1.6.tar.gz &amp;&amp; tar zxf lnmp1.6.tar.gz &amp;&amp; cd lnmp1.6 &amp;&amp; ./install.sh lnmp</span></span><br></pre></td></tr></table></figure>
+
+<p>安装完成后：</p>
+<p><img src="lnmp-2.png" alt></p>
+<p>浏览器输入 IP 地址显示安装成功：</p>
+<p><img src="lnmp-1.png" alt></p>
+<h2 id="3-使用-H5ai-搭建文件目录列表"><a href="#3-使用-H5ai-搭建文件目录列表" class="headerlink" title="3. 使用 H5ai 搭建文件目录列表"></a>3. 使用 H5ai 搭建文件目录列表</h2><p><a href="https://larsjung.de/h5ai/" target="_blank" rel="noopener">h5ai</a> 是一款 PHP 开发的目录列表程序，由德国开发者 Lars Jung 主导开发，它提供多种文件目录列表呈现方式，支持多种主流 Web 服务器，例如 Nginx、Apache、Cherokee、Lighttpd 等，支持多国语言，可以直接在线预览视频、图片、音乐等，效果很炫。</p>
+<p>示例网站：<a href="https://larsjung.de/h5ai/demo/" target="_blank" rel="noopener">https://larsjung.de/h5ai/demo/</a></p>
+<p><img src="h5ai-1.png" alt></p>
+<h3 id="3-1-宝塔面板下安装配置-h5ai"><a href="#3-1-宝塔面板下安装配置-h5ai" class="headerlink" title="3.1 宝塔面板下安装配置 h5ai"></a>3.1 宝塔面板下安装配置 h5ai</h3><ol>
+<li>在宝塔控制面板中新建站点，如果有域名则填写域名，否则填写 IP 地址。</li>
+</ol>
+<p><img src="h5ai-0.png" alt></p>
+<ol start="2">
+<li>从 h5ai 网站下载文件: <a href="https://release.larsjung.de/h5ai/h5ai-0.29.2.zip" target="_blank" rel="noopener">h5ai-0.29.2.zip</a>。将下载好的文件上传至新建下载网站根目录，并解压。</li>
+</ol>
+<p><img src="h5ai-5.png" alt></p>
+<ol start="3">
+<li>删除其他无关文件。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">404.html</span><br><span class="line">h5ai-0.29.2.zip</span><br><span class="line">index.html</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>在宝塔面板中，进入软件商店，找到 PHP 设置。</li>
+</ol>
+<p><img src="h5ai-8.png" alt></p>
+<ol start="5">
+<li>修改 PHP 配置 - 禁用函数，删除禁用函数 <code>exec</code>、<code>putenv</code> 、<code>passthru</code> 、<code>scandir</code>。</li>
+</ol>
+<p><img src="h5ai-7.png" alt></p>
+<ol start="6">
+<li>同样在软件商店中修改 Nginx 配置, 在 <code>index.html</code>行后添加 <code>/_h5ai/public/index.php</code> 。</li>
+</ol>
+<p><img src="h5ai-3.png" alt></p>
+<ol start="7">
+<li>添加在线预览图片等插件。</li>
+</ol>
+<p><img src="h5ai-6.png" alt></p>
+<p>配置完成后，重启机器，在浏览器中输入 <code>http://IP/_h5ai/public/index.php</code> 查看 h5ai 目录。</p>
+<h3 id="3-2-在-LNMP-框架下安装配置-h5ai"><a href="#3-2-在-LNMP-框架下安装配置-h5ai" class="headerlink" title="3.2 在 LNMP 框架下安装配置 h5ai"></a>3.2 在 LNMP 框架下安装配置 h5ai</h3><ol>
+<li><p>使用 <code>lnmp vhost add</code>  命令新建站点</p>
+<p><img src="lnmp1.4-vhost-add-1.png" alt></p>
+</li>
+<li><p>输入站点域名，没有的话直接使用 IP 地址</p>
+</li>
+<li><p>设置网站目录，以绝对路径表示</p>
+</li>
+<li><p>执行 <code>./pureftpd.sh</code> 安装 ftp 服务，并添加 ftp 账号及目录</p>
+</li>
+<li><p>将  <a href="https://release.larsjung.de/h5ai/h5ai-0.29.2.zip" target="_blank" rel="noopener">h5ai-0.29.2.zip</a> 解压后上传至网站根目录</p>
+</li>
+<li><p>访问 <a href="http://域名或IP/_h5ai/public/index.php" target="_blank" rel="noopener">http://域名或IP/_h5ai/public/index.php</a>  查看是否可以访问成功</p>
+</li>
+<li><p>修改当前站点下的 nginx  配置文件 <code>/usr/local/nginx/conf/vhost/域名.conf</code> 在 root 行下添加：</p>
+<p><code>index index.html index.php /_h5ai/public/index.php;</code></p>
+<p><img src="h5ai-nginx-config.png" alt></p>
+</li>
+<li><p>修改 php 配置文件 <code>/usr/local/php/etc/php.ini</code> , 搜索 <code>disable_functions</code>，将其后面的<code>scandir</code>、<code>exec</code> 和 <code>passthru</code> 删除，保存</p>
+</li>
+<li><p>使用 <code>lnmp restart</code> 命令重启 LNMP 服务</p>
+</li>
+<li><p>安装必要的插件</p>
+</li>
+<li><p>将要分享的文件放置于根目录下，在浏览器中输入 IP 地址即可</p>
+<p><img src="h5ai-10.png" alt></p>
+</li>
+<li><p>搞定收工。</p>
+</li>
+</ol>
+<h3 id="3-3-安装-h5ai-相关插件"><a href="#3-3-安装-h5ai-相关插件" class="headerlink" title="3.3 安装 h5ai 相关插件"></a>3.3 安装 h5ai 相关插件</h3><h4 id="3-3-1-安装-exif-模块"><a href="#3-3-1-安装-exif-模块" class="headerlink" title="3.3.1 安装 exif 模块"></a>3.3.1 安装 exif 模块</h4><ol>
+<li>下载 PHP 源码安装包：<a href="https://www.php.net/distributions/php-7.3.8.tar.gz" target="_blank" rel="noopener">php-7.3.8.tar.gz</a> </li>
+<li>解压后，切换至 <code>php-7.3.8/ext/exif</code> 目录下</li>
+<li>运行 <code>/usr/local/php/bin/phpize</code></li>
+<li>执行编译命令 <code>./configure --with-php-config=/usr/local/php/bin/php-config</code></li>
+<li>执行编译及安装 <code>make &amp;&amp; make install</code></li>
+<li>修改 <code>/usr/local/php/etc/php.ini</code> 文件，查找：<code>extension=</code> 再最后一个 <code>extension=</code> 后面添加上<code>extension = &quot;exif.so&quot;</code></li>
+<li>执行 <code>/etc/init.d/php-fpm restart</code> 重启 PHP</li>
+<li>搞定收工</li>
+</ol>
+<h4 id="3-3-2-安装-ffmpeg-实现视频缩略图预览"><a href="#3-3-2-安装-ffmpeg-实现视频缩略图预览" class="headerlink" title="3.3.2 安装 ffmpeg 实现视频缩略图预览"></a>3.3.2 安装 ffmpeg 实现视频缩略图预览</h4><p>使用命令 <code>apt install ffmpeg -y</code> 安装 <code>ffmeg</code> 实现视频缩略图预览。</p>
+<h4 id="3-3-3-安装-imagemagick-实现-PDF-图片预览"><a href="#3-3-3-安装-imagemagick-实现-PDF-图片预览" class="headerlink" title="3.3.3 安装 imagemagick 实现 PDF/图片预览"></a>3.3.3 安装 imagemagick 实现 PDF/图片预览</h4><p>使用命令 <code>apt install imagemagick -y</code> 安装 imagemagick 实现 PDF、图片的缩略图预览。</p>
+<h4 id="3-3-4-开启数据打包下载"><a href="#3-3-4-开启数据打包下载" class="headerlink" title="3.3.4 开启数据打包下载"></a>3.3.4 开启数据打包下载</h4><p>使用命令 <code>apt install zip</code> 实现数据打包下载。</p>
+<h3 id="3-4-实现-h5ai-其他功能"><a href="#3-4-实现-h5ai-其他功能" class="headerlink" title="3.4 实现 h5ai 其他功能"></a>3.4 实现 h5ai 其他功能</h3><p>编辑 <code>/home/wwwroot/database.lab/_h5ai/private/conf/options.json</code> 文件，实现 h5ai 其他功能。</p>
+<ol>
+<li><p>修改后台密码</p>
+<p>首先在此网址 <a href="http://www.ttmd5.com/hash.php?type=A" target="_blank" rel="noopener">http://www.ttmd5.com/hash.php?type=A</a> 生成自定义 sha512 密码, 然后修改 “passhash” 字符后的字符串为解密的字符串。开启打包下载</p>
+</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&quot;download&quot;: &#123;</span><br><span class="line">    &quot;enabled&quot;: true,</span><br><span class="line">    &quot;type&quot;: &quot;php-zip&quot;,</span><br><span class="line">    &quot;packageName&quot;: null,</span><br><span class="line">    &quot;alwaysVisible&quot;: true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开启文件信息显示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&quot;info&quot;: &#123;</span><br><span class="line">        &quot;enabled&quot;: true,</span><br><span class="line">        &quot;show&quot;: false,</span><br><span class="line">        &quot;qrcode&quot;: true,</span><br><span class="line">        &quot;qrFill&quot;: &quot;#999&quot;,</span><br><span class="line">        &quot;qrBack&quot;: &quot;#fff&quot;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>默认简体中文</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&quot;l10n&quot;: &#123;</span><br><span class="line">        &quot;enabled&quot;: true,</span><br><span class="line">        &quot;lang&quot;: &quot;zh-cn&quot;,</span><br><span class="line">        &quot;useBrowserLang&quot;: true</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开启文件搜索</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&quot;search&quot;: &#123;</span><br><span class="line">        &quot;enabled&quot;: true,</span><br><span class="line">        &quot;advanced&quot;: true,</span><br><span class="line">        &quot;debounceTime&quot;: 300,</span><br><span class="line">        &quot;ignorecase&quot;: true</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开启多文件选择</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&quot;select&quot;: &#123;</span><br><span class="line">        &quot;enabled&quot;: true,</span><br><span class="line">        &quot;clickndrag&quot;: true,</span><br><span class="line">        &quot;checkboxes&quot;: true</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="4-搭建-Hexo-博客网站"><a href="#4-搭建-Hexo-博客网站" class="headerlink" title="4. 搭建 Hexo 博客网站"></a>4. 搭建 Hexo 博客网站</h2><h4 id="4-1-安装最新长期支持版-Node-js"><a href="#4-1-安装最新长期支持版-Node-js" class="headerlink" title="4.1 安装最新长期支持版 Node.js"></a>4.1 安装最新长期支持版 Node.js</h4><p><a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a> 是一个通用编程的JavaScript平台，允许用户快速构建网络应用程序。 通过在前端和后端利用JavaScript，Node.js使开发更加一致和集成。 </p>
+<p>从官方网站来看，最新的 LTS Nodejs 版文为 v10：</p>
+<p><img src="nodejs-1.png" alt="Node.js"></p>
+<p>参考文档：<a href="https://github.com/nodesource/distributions" target="_blank" rel="noopener">https://github.com/nodesource/distributions</a> 安装 node.js v12。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Using Ubuntu</span></span><br><span class="line">curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -</span><br><span class="line">sudo apt-get install -y nodejs</span><br><span class="line"></span><br><span class="line"><span class="comment"># Using Debian, as root</span></span><br><span class="line">curl -sL https://deb.nodesource.com/setup_12.x | bash -</span><br><span class="line">apt-get install -y nodejs</span><br></pre></td></tr></table></figure>
+
+<p>方便快捷：</p>
+<p><img src="nodejs-2.png" alt="Node.js"></p>
+<p><strong>通过npm安装node.js</strong></p>
+<p>当然可以首先安装 node.js 的版本管理包 <code>npm</code> 然后再使用 npm 安装需要版本的 node.js。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## install NVM (Node Version Manager)</span></span><br><span class="line">$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash</span><br><span class="line">$ <span class="built_in">source</span>   ~/.bashrc || <span class="built_in">source</span>   ~/.zshrc</span><br><span class="line">$ nvm ls-remote 				<span class="comment">## 查看 node 所有版本</span></span><br><span class="line">$ nvm install v10.16.1 			<span class="comment">## 安装需要的版本</span></span><br><span class="line">$ nvm list 						<span class="comment">## 查看当前机器安装的版本</span></span><br><span class="line">$ nvm use v10.16.1 				<span class="comment">## 切换 node 版本</span></span><br><span class="line">$ nvm <span class="built_in">alias</span> default v10.16.1  	<span class="comment">## 设置默认版本</span></span><br></pre></td></tr></table></figure>
+
+<p>npm 为 nodejs 的独立包，使用以下命令升级 npm：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install npm@latest -g</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-安装-Hexo-博客框架"><a href="#4-2-安装-Hexo-博客框架" class="headerlink" title="4.2 安装 Hexo 博客框架"></a>4.2 安装 Hexo 博客框架</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。其主要通过在本地配置好相应界面后，通过 git 直接传输至服务器然后进行静态展示。</p>
+<p>Hexo 的安装依赖于 <code>git</code> 以及 <code>node.js</code> (version &gt; 6.9), 安装较为简单：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>具体配置详细见文章《Hexo搭建配置指南》。</p>
+<h3 id="4-2-Hexo-的配置"><a href="#4-2-Hexo-的配置" class="headerlink" title="4.2 Hexo 的配置"></a>4.2 Hexo 的配置</h3><h4 id="4-2-1-配置网站信息"><a href="#4-2-1-配置网站信息" class="headerlink" title="4.2.1 配置网站信息"></a>4.2.1 配置网站信息</h4><p>首先使用 <code>hexo init [folder]</code> 新建一个网站，编辑 <code>_config.yaml</code> 文件，添加相关网站信息等。</p>
+<h4 id="4-2-2-配置-Hexo-主题"><a href="#4-2-2-配置-Hexo-主题" class="headerlink" title="4.2.2 配置 Hexo 主题"></a>4.2.2 配置 Hexo 主题</h4><p>下载适用的主题，并在 <code>_config.yaml</code> 配件中进行修改。</p>
+<h3 id="4-3-Hexo-的使用"><a href="#4-3-Hexo-的使用" class="headerlink" title="4.3 Hexo 的使用"></a>4.3 Hexo 的使用</h3><p>Hexo 搭建的 Blog 系统主要用于大家日常的学习笔记、心得、读书报告等的展示。使用命令 <code>hexo new [layout] &lt;title&gt;</code> 新建相关内容。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;filename&gt;	# 发表草稿</span><br><span class="line">$ hexo clean		# 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span><br><span class="line">$ hexo generate		# 生成页面</span><br><span class="line">$ hexo server 		# 启动服务</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-参考链接"><a href="#5-参考链接" class="headerlink" title="5. 参考链接"></a>5. 参考链接</h2><ol>
+<li><a href="https://linuxize.com/post/install-mariadb-on-centos-7/" target="_blank" rel="noopener">https://linuxize.com/post/install-mariadb-on-centos-7/</a></li>
+<li>宝塔命令大全 <a href="https://www.bt.cn/btcode.html" target="_blank" rel="noopener">https://www.bt.cn/btcode.html</a></li>
+<li><a href="https://linuxconfig.org/install-ffmpeg-on-ubuntu-18-04-bionic-beaver-linux" target="_blank" rel="noopener">https://linuxconfig.org/install-ffmpeg-on-ubuntu-18-04-bionic-beaver-linux</a></li>
+<li><a href="https://blog.iwyc.cn/h5ai" target="_blank" rel="noopener">https://blog.iwyc.cn/h5ai</a></li>
+<li><a href="https://github.com/limedroid/HexoLearning" target="_blank" rel="noopener">https://github.com/limedroid/HexoLearning</a></li>
+</ol>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/2019/08/06/搭建基本网络环境/" data-toggle="tooltip" data-placement="top" title="搭建基本网络环境">Next post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <br>
+
+                <!--打赏-->
+                
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                
+                    <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div>
+                    <!--  css & js -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+                
+                <!--分享-->
+                <br>                       
+                
+                <!-- require APlayer -->
+                
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+				
+            </div>
+
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">Tags</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#BLOG" title="BLOG">BLOG</a>
+                        
+                          <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
+                        
+                          <a class="tag" href="/tags/#LNMP" title="LNMP">LNMP</a>
+                        
+                          <a class="tag" href="/tags/#Site" title="Site">Site</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://www.sumoon.com" target="_blank">ACE theme</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/Demonbane_x">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://weibo.com/Demonbaneen">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/maize604">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; MaizeLab 2019 
+                    <br>
+                    Powered by <a href="http://www.hexo.io">Hexo</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    Theme by <a href="https://github.com/kinggozhang/hexo-theme-ace">ACE</a> 
+					
+					
+					<i class="fa fa-eye" id="leancounter"></i>
+					
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+
+   <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+
+
+
+<!-- Bootstrap Core JavaScript -->
+
+   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+	<script src="/js/particles.js"></script>
+	<script src="/js/particles_config.js"></script>
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://maize.lab/2019/08/14/网站搭建指南/index.html/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://maize.lab/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
